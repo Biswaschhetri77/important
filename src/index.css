@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.main_div{ 
+  width: 100%; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background: #6983aa; 
+  text-align: center; 
+} 
+.center_div{ 
+  width: 25%; 
+  height: 80vh; 
+  background: rgb(214, 208, 208); 
+  box-shadow: 5px 5px 25px -5px; 
+  border-radius: 15px; 
+} 
+h1{ 
+  color: white; 
+  padding: 6px 0px 5px 0px; 
+   margin-bottom: 10px;  
+  background-color: #8566aa; 
+  } 
+  input{ 
+    background-color: transparent; 
+    height: 30px; 
+    border: none; 
+    border-bottom: 2px solid rgb(124, 89, 107); 
+    font-size: 15px; 
+    font-weight: 400; 
+    text-align: center; 
+    outline: none; 
+    top: 10px; 
+    width: 60%;
+  } 
+  button{ 
+    min-height: 30px; 
+    border-radius: 50%; 
+    border-color: transparent; 
+    font-size: 30px; 
+    width: 40px; 
+    color: rgb(60, 51, 40); 
+    border: none; 
+    outline: none; 
+    box-shadow:9px 10px 5px -1px #596270; 
+    cursor: pointer; 
+    margin-left: 10px; 
+  } 
+  button:hover{ 
+    background-color: rgb(37, 177, 116);
+  }
+  ol{
+    margin-top: 30px;
+  }
+  ol li{
+  list-style: none;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: rgb(18, 39, 59);
+  font-style: bold;
+  }
+  .todo_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  
+  }
+  .todo_style .fa-square-xmark{
+     text-align: left; 
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    margin: 0px 15px 0px 35px;
+    color: rgb(134, 150, 107);
+    background-color: transparent;
+  }
+  .todo_style .fa-square-xmark:hover{
+    color: red;
+  }
+
+  @media (min-width:300px) and (max-width:768px){
+.main_div{
+  width: 100%;
+  max-height: 100vh;
+}
+.center_div{
+  width:45%
+}
+.todo_style .fa-square-xmark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(181, 183, 187);
+  width: 20px;
+  height: 20px;
+  margin: 0px 15px 0px 35px;
+  text-align: left;
+}
+.todo_style .fa-square-xmark:hover{
+  color: red;
+}
+  }
